@@ -1,0 +1,55 @@
+unit SDIMAIN;
+
+interface
+
+uses Winapi.Windows, System.Classes, Vcl.Graphics, Vcl.Forms, Vcl.Controls,
+  Vcl.Menus, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls, Vcl.ComCtrls,
+  Vcl.ImgList, Vcl.StdActns, Vcl.ActnList, Vcl.ToolWin, Data.DB, Vcl.Grids,
+  Vcl.DBGrids, Vcl.DBCtrls;
+
+type
+  TSDIAppForm = class(TForm)
+    Panel1: TPanel;
+    DBComboBox1: TDBComboBox;
+    DBNavigator1: TDBNavigator;
+    DBGrid1: TDBGrid;
+    DBGrid2: TDBGrid;
+    DBGrid3: TDBGrid;
+    Panel2: TPanel;
+    ComboBox1: TComboBox;
+    Edit1: TEdit;
+    Label1: TLabel;
+    procedure FileNew1Execute(Sender: TObject);
+    procedure FileExit1Execute(Sender: TObject);
+    procedure HelpAbout1Execute(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  SDIAppForm: TSDIAppForm;
+
+implementation
+
+uses About, Unit1;
+
+{$R *.dfm}
+
+procedure TSDIAppForm.FileNew1Execute(Sender: TObject);
+begin
+  { Do nothing }
+end;
+
+procedure TSDIAppForm.FileExit1Execute(Sender: TObject);
+begin
+  Close;
+end;
+
+procedure TSDIAppForm.HelpAbout1Execute(Sender: TObject);
+begin
+  AboutBox.ShowModal;
+end;
+
+end.
