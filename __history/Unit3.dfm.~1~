@@ -1,0 +1,49 @@
+object DataModule3: TDataModule3
+  OldCreateOrder = False
+  Height = 370
+  Width = 587
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=F:\'#1059#1095#1077#1073#1072'\3 '#1082#1091#1088#1089' 6 '#1089 +
+      #1077#1084'\Delphi\DB\football.mdb;Persist Security Info=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 80
+    Top = 120
+  end
+  object TFootballer: TADOTable
+    Connection = ADOConnection1
+    TableName = 'footballer'
+    Left = 256
+    Top = 88
+  end
+  object TClub: TADOTable
+    Connection = ADOConnection1
+    TableName = 'Club'
+    Left = 248
+    Top = 168
+  end
+  object TNatteam: TADOTable
+    Connection = ADOConnection1
+    TableName = 'Natteam'
+    Left = 248
+    Top = 240
+  end
+  object DSFootballer: TDataSource
+    DataSet = TFootballer
+    Left = 400
+    Top = 96
+  end
+  object DSClub: TDataSource
+    DataSet = TClub
+    Left = 392
+    Top = 168
+  end
+  object DSNatteam: TDataSource
+    DataSet = TNatteam
+    Left = 400
+    Top = 248
+  end
+end

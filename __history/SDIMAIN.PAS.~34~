@@ -131,7 +131,7 @@ begin
     else
       DataModule3.Tfootballer.Filtered:=false; //иначе отключаем фильтрацию.
   end
-  else if Combobox1.ItemIndex=2 then
+  else if Combobox1.ItemIndex=1 then
   begin //аналогично если таблица —борные
     if Edit1.Text <> '' then
     begin
@@ -142,7 +142,7 @@ begin
     else
       DataModule3.Tnatteam.Filtered:=false;
   end
-  else   if Combobox1.ItemIndex=1 then
+  else   if Combobox1.ItemIndex=2 then
   begin //аналогично если таблица  лубы
     if Edit1.Text <> '' then
     begin

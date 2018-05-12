@@ -2,15 +2,15 @@ program Sdiapp;
 
 uses
   Forms,
-  Unit3 in 'Unit3.pas' {DataModule3: TDataModule},
-  SDIMAIN in 'SDIMAIN.PAS' {SDIAppForm};
+  SDIMAIN in 'SDIMAIN.PAS' {SDIAppForm},
+  ABOUT in 'ABOUT.PAS' {AboutBox};
 
 {$R *.RES}
 
 begin
   Application.Initialize;
-  Application.CreateForm(TDataModule3, DataModule3);
   Application.CreateForm(TSDIAppForm, SDIAppForm);
+  Application.CreateForm(TAboutBox, AboutBox);
   Application.Run;
 end.
  

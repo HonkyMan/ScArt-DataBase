@@ -1,0 +1,35 @@
+unit Unit3;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Data.DB, Data.Win.ADODB;
+
+type
+  TDataModule3 = class(TDataModule)
+    ADOConnection1: TADOConnection;
+    TFootballer: TADOTable;
+    TClub: TADOTable;
+    TNatteam: TADOTable;
+    DSFootballer: TDataSource;
+    DSClub: TDataSource;
+    DSNatteam: TDataSource;
+  private
+    { Private declarations }
+  public
+  var ed: string;
+    { Public declarations }
+  end;
+
+var
+  DataModule3: TDataModule3;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+uses SDIMAIN;
+
+{$R *.dfm}
+
+end.

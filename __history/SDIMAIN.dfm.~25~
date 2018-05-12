@@ -44,13 +44,68 @@ object SDIAppForm: TSDIAppForm
         #1057#1073#1086#1088#1085#1099#1077)
     end
   end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Top = 25
+    Width = 790
+    Height = 120
+    Align = alTop
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -13
+    TitleFont.Name = 'System'
+    TitleFont.Style = []
+    Visible = False
+  end
+  object DBGrid2: TDBGrid
+    Left = 0
+    Top = 145
+    Width = 790
+    Height = 120
+    Align = alTop
+    TabOrder = 2
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -13
+    TitleFont.Name = 'System'
+    TitleFont.Style = []
+    Visible = False
+  end
+  object DBGrid3: TDBGrid
+    Left = 0
+    Top = 265
+    Width = 790
+    Height = 120
+    Align = alTop
+    TabOrder = 3
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -13
+    TitleFont.Name = 'System'
+    TitleFont.Style = []
+    Visible = False
+  end
   object Panel2: TPanel
     Left = 0
     Top = 387
     Width = 790
     Height = 41
     Align = alBottom
-    TabOrder = 1
+    TabOrder = 4
+    object Label1: TLabel
+      Left = 24
+      Top = 4
+      Width = 145
+      Height = 25
+      Caption = #1055#1086#1080#1089#1082' '#1087#1086' '#1087#1086#1083#1102
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
     object Edit1: TEdit
       Left = 353
       Top = 4
@@ -76,63 +131,5 @@ object SDIAppForm: TSDIAppForm
       Caption = #1055#1054#1048#1057#1050
       TabOrder = 2
     end
-    object StaticText1: TStaticText
-      Left = 17
-      Top = 4
-      Width = 154
-      Height = 23
-      Caption = #1055#1086#1080#1089#1082' '#1087#1086' '#1090#1072#1073#1083#1080#1094#1077
-      Font.Charset = RUSSIAN_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -16
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 3
-    end
-  end
-  object DBGrid1: TDBGrid
-    Left = 0
-    Top = 25
-    Width = 790
-    Height = 120
-    Align = alTop
-    DataSource = DataModule3.DSFootballer
-    TabOrder = 2
-    TitleFont.Charset = DEFAULT_CHARSET
-    TitleFont.Color = clWindowText
-    TitleFont.Height = -13
-    TitleFont.Name = 'System'
-    TitleFont.Style = []
-  end
-  object DBGrid2: TDBGrid
-    Left = 0
-    Top = 145
-    Width = 790
-    Height = 120
-    Align = alTop
-    DataSource = DataModule3.DSClub
-    TabOrder = 3
-    TitleFont.Charset = DEFAULT_CHARSET
-    TitleFont.Color = clWindowText
-    TitleFont.Height = -13
-    TitleFont.Name = 'System'
-    TitleFont.Style = []
-    Visible = False
-  end
-  object DBGrid3: TDBGrid
-    Left = 0
-    Top = 265
-    Width = 790
-    Height = 120
-    Align = alTop
-    DataSource = DataModule3.DSNatteam
-    TabOrder = 4
-    TitleFont.Charset = DEFAULT_CHARSET
-    TitleFont.Color = clWindowText
-    TitleFont.Height = -13
-    TitleFont.Name = 'System'
-    TitleFont.Style = []
-    Visible = False
   end
 end

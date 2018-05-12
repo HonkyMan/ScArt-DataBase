@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2018.05.04 21:21:47.858,F:\Учеба\3 курс 6 сем\Delphi\DB\Unit2.pas=</Transaction>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.493,F:\Учеба\3 курс 6 сем\Delphi\DB\Unit1.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.858,F:\Учеба\3 курс 6 сем\Delphi\DB\Unit2.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.129,=F:\Учеба\3 курс 6 сем\Delphi\DB\Unit3.pas</Transaction>
+    <Transaction>2018.05.12 14:39:34.609,F:\Учеба\3 курс 6 сем\Delphi\DB\SDIMAIN.PAS=</Transaction>
+    <Transaction>2018.05.12 14:39:53.203,=F:\Учеба\3 курс 6 сем\Delphi\DB\SDIMAIN.PAS</Transaction>
+    <Transaction>2018.05.12 14:40:24.715,=F:\Учеба\3 курс 6 сем\Delphi\DB\Unit1.pas</Transaction>
+    <Transaction>2018.05.12 14:42:17.096,F:\Учеба\3 курс 6 сем\Delphi\DB\ABOUT.PAS=</Transaction>
   </Transactions>
 </BorlandProject>

@@ -19,7 +19,6 @@ type
     DBGrid1: TDBGrid;
     DBGrid2: TDBGrid;
     DBGrid3: TDBGrid;
-    StaticText1: TStaticText;
     procedure FileNew1Execute(Sender: TObject);
     procedure FileExit1Execute(Sender: TObject);
     procedure FormActivate(Sender: TObject);
@@ -50,6 +49,7 @@ procedure TSDIAppForm.FormActivate(Sender: TObject);
 begin
   ComboBox1.ItemIndex:=0;
   ComboBox2.ItemIndex:=0;
+  DBGrid1.Visible:=true;
   // при запуске будет отображаться таблица Футболисты
   DBNavigator1.DataSource:=DataModule3.DSfootballer; // настраиваем навигатор для работы с таблицей Футболисты
   DBGrid1.Columns[0].Width:=150;
@@ -131,7 +131,7 @@ begin
     else
       DataModule3.Tfootballer.Filtered:=false; //иначе отключаем фильтрацию.
   end
-  else if Combobox1.ItemIndex=2 then
+  else   if Combobox1.ItemIndex=1 then
   begin //аналогично если таблица Сборные
     if Edit1.Text <> '' then
     begin
@@ -142,7 +142,7 @@ begin
     else
       DataModule3.Tnatteam.Filtered:=false;
   end
-  else   if Combobox1.ItemIndex=1 then
+  else   if Combobox1.ItemIndex=2 then
   begin //аналогично если таблица Клубы
     if Edit1.Text <> '' then
     begin

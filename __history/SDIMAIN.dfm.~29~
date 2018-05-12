@@ -76,20 +76,6 @@ object SDIAppForm: TSDIAppForm
       Caption = #1055#1054#1048#1057#1050
       TabOrder = 2
     end
-    object StaticText1: TStaticText
-      Left = 17
-      Top = 4
-      Width = 154
-      Height = 23
-      Caption = #1055#1086#1080#1089#1082' '#1087#1086' '#1090#1072#1073#1083#1080#1094#1077
-      Font.Charset = RUSSIAN_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -16
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 3
-    end
   end
   object DBGrid1: TDBGrid
     Left = 0
@@ -118,7 +104,6 @@ object SDIAppForm: TSDIAppForm
     TitleFont.Height = -13
     TitleFont.Name = 'System'
     TitleFont.Style = []
-    Visible = False
   end
   object DBGrid3: TDBGrid
     Left = 0
@@ -133,6 +118,5 @@ object SDIAppForm: TSDIAppForm
     TitleFont.Height = -13
     TitleFont.Name = 'System'
     TitleFont.Style = []
-    Visible = False
   end
 end
