@@ -2,8 +2,8 @@ object SDIAppForm: TSDIAppForm
   Left = 197
   Top = 111
   Caption = 'SDI Application'
-  ClientHeight = 428
-  ClientWidth = 790
+  ClientHeight = 434
+  ClientWidth = 806
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,17 +17,19 @@ object SDIAppForm: TSDIAppForm
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 790
+    Width = 806
     Height = 25
     Align = alTop
     TabOrder = 0
+    ExplicitWidth = 790
     object DBNavigator1: TDBNavigator
       Left = 146
       Top = 1
-      Width = 643
+      Width = 659
       Height = 23
       Align = alClient
       TabOrder = 0
+      ExplicitWidth = 643
     end
     object ComboBox1: TComboBox
       Left = 1
@@ -46,11 +48,13 @@ object SDIAppForm: TSDIAppForm
   end
   object Panel2: TPanel
     Left = 0
-    Top = 387
-    Width = 790
+    Top = 393
+    Width = 806
     Height = 41
     Align = alBottom
     TabOrder = 1
+    ExplicitTop = 387
+    ExplicitWidth = 790
     object Edit1: TEdit
       Left = 353
       Top = 4
@@ -94,7 +98,7 @@ object SDIAppForm: TSDIAppForm
   object DBGrid1: TDBGrid
     Left = 0
     Top = 25
-    Width = 790
+    Width = 806
     Height = 120
     Align = alTop
     DataSource = DataModule3.DSFootballer
@@ -108,7 +112,7 @@ object SDIAppForm: TSDIAppForm
   object DBGrid2: TDBGrid
     Left = 0
     Top = 145
-    Width = 790
+    Width = 806
     Height = 120
     Align = alTop
     DataSource = DataModule3.DSClub
@@ -123,7 +127,7 @@ object SDIAppForm: TSDIAppForm
   object DBGrid3: TDBGrid
     Left = 0
     Top = 265
-    Width = 790
+    Width = 806
     Height = 120
     Align = alTop
     DataSource = DataModule3.DSNatteam
